@@ -1,15 +1,16 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<mat-toolbar color="primary">
+<mat-toolbar color="accent">
   <mat-toolbar-row>
     <button mat-icon-button>
       <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
     </button>
+    
     <h1>Portfolio</h1>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container [hasBackdrop]="true">
+<mat-sidenav-container [hasBackdrop]="false">
   <mat-sidenav #sidenav mode="over" >
     <mat-nav-list>
       <a mat-list-item>Home</a>
@@ -19,7 +20,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div style="height: 88vh; background-color: yellow;">
+    <div style="height: 88vh; background-color: gray;">
       <router-outlet>
       </router-outlet></div>
   </mat-sidenav-content>
